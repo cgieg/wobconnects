@@ -1,1 +1,4 @@
- 
+[submodule "Wolfsburg-connect"]
+  path = Wolfsburg-connect
+  url = https://github.com/cgieg/DEIN_REPO_NAME.git  # <--- Ersetze dies mit der korrekten URL
+  # HIER FEHLT WAHRSCHEINLICH DIE URL 
