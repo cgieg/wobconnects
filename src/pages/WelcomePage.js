@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  Box,
   Container,
   Typography,
   Paper,
@@ -26,7 +25,7 @@ function WelcomePage() {
         </Typography>
         
         <Typography variant="h6" component="p" color="text.secondary" sx={{ mb: 3 }}>
-          Willkommen bei Wolfsburg Connect! Schön, dass Sie dabei sind.
+          Willkommen bei wobconnects! Schön, dass Sie dabei sind.
         </Typography>
 
         <Typography variant="body1" paragraph>

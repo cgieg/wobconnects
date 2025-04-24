@@ -60,7 +60,7 @@ function ContactPage() {
             <Typography variant="h6" gutterBottom>Direkter Kontakt</Typography>
             <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
               <EmailIcon sx={{ mr: 1, color: 'text.secondary' }} />
-              <Typography variant="body1">info@wolfsburg-connect.de</Typography>
+              <Typography variant="body1">info@wobconnects.de</Typography>
             </Box>
             <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
               <PhoneIcon sx={{ mr: 1, color: 'text.secondary' }} />

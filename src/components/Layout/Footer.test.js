@@ -2,6 +2,8 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { BrowserRouter as Router } from 'react-router-dom'; // Router benötigt für RouterLink
 import Footer from './Footer';
+import { ThemeProvider } from '@mui/material/styles';
+import theme from '../../theme';
 
 // Test-Suite für die Footer-Komponente
 describe('Footer Component', () => {
@@ -10,16 +12,18 @@ describe('Footer Component', () => {
   test('renders correctly', () => {
     render(
       <Router>
-        <Footer />
+        <ThemeProvider theme={theme}>
+          <Footer />
+        </ThemeProvider>
       </Router>
     );
 
-    // Überprüfen, ob der Haupttext "Wolfsburg Connect" vorhanden ist
-    expect(screen.getByText(/Wolfsburg Connect/i)).toBeInTheDocument();
+    // Überprüfen, ob der Haupttext "wobconnects" vorhanden ist
+    expect(screen.getByText(/wobconnects/i)).toBeInTheDocument();
 
     // Überprüfen, ob der Copyright-Text vorhanden ist (mit dynamischem Jahr)
     const currentYear = new Date().getFullYear();
-    expect(screen.getByText(`© ${currentYear} Wolfsburg Connect. Alle Rechte vorbehalten.`)).toBeInTheDocument();
+    expect(screen.getByText(`© ${currentYear} wobconnects. Alle Rechte vorbehalten.`)).toBeInTheDocument();
 
     // Überprüfen, ob einer der Links vorhanden ist (Beispiel)
     expect(screen.getByRole('link', { name: /über uns/i })).toBeInTheDocument();
@@ -30,7 +34,9 @@ describe('Footer Component', () => {
   test('renders links with correct paths', () => {
     render(
       <Router>
-        <Footer />
+        <ThemeProvider theme={theme}>
+          <Footer />
+        </ThemeProvider>
       </Router>
     );
 

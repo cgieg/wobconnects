@@ -1,4 +1,4 @@
-# Wolfsburg Connect
+# wobconnects
 
 Eine hyper-lokale Nachbarschafts-App mit Fokus auf Hilfe, Teilen und Aktionen.
 
@@ -52,5 +52,4 @@ Die Anwendung ist dann unter `http://localhost:3000` (oder einem anderen Port, f
     *   `services/`: Module für API-Aufrufe (aktuell Mock-Daten).
     *   `styles/`: Globale Stile und Theme-Konfiguration.
     *   `App.js`: Haupt-App-Komponente (Routing, Layout).
-    *   `index.js`: Einstiegspunkt der Anwendung. # Wolfsburg-connect-2
-# Wolfsburg-Connect
+    *   `index.js`: Einstiegspunkt der Anwendung.

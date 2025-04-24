@@ -27,8 +27,9 @@ const faqData = [
     answer: 'Unter "Ressourcen" sehen Sie Gegenstände, die von Nachbarn geteilt werden. Sie können Gegenstände anfragen oder eigene hinzufügen (Funktion noch in Entwicklung).'
   },
   {
-    question: 'Ist die Nutzung von Wolfsburg Connect kostenlos?',
-    answer: 'Ja, die Nutzung der Plattform ist für alle Bewohner kostenlos.'
+    id: 'kosten',
+    question: 'Ist die Nutzung von wobconnects kostenlos?',
+    answer: 'Ja, die grundlegende Nutzung der Plattform ist für alle Nachbarn kostenlos. Wir finanzieren uns über freiwillige Spenden und ggf. zukünftige, optionale Zusatzfunktionen.'
   },
   {
     question: 'An wen wende ich mich bei Problemen?',

@@ -8,9 +8,12 @@ import {
   Paper,
   Alert,
   Link,
+  Avatar,
+  CssBaseline,
 } from '@mui/material';
 import { Link as RouterLink, useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
+import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 
 function LoginPage() {
   const [email, setEmail] = useState('');
@@ -42,19 +45,29 @@ function LoginPage() {
   };
 
   return (
-    <Container maxWidth="sm" sx={{ mt: 4, mb: 4 }}>
-      <Paper elevation={3} sx={{ p: 4 }}>
-        <Typography variant="h4" component="h1" align="center" gutterBottom>
-          Willkommen bei Wolfsburg Connect
+    <Container component="main" maxWidth="xs">
+      <CssBaseline />
+      <Paper 
+        elevation={3} 
+        sx={{ 
+          marginTop: 8, 
+          display: 'flex', 
+          flexDirection: 'column', 
+          alignItems: 'center', 
+          padding: 4 
+        }}
+      >
+        <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
+          <LockOutlinedIcon />
+        </Avatar>
+        <Typography component="h1" variant="h5">
+          Anmelden
         </Typography>
-        
-        <Typography variant="subtitle1" align="center" color="text.secondary" sx={{ mb: 3 }}>
-          Melden Sie sich an, um mit Ihrer Nachbarschaft in Kontakt zu treten
+        <Typography variant="subtitle1" color="text.secondary" sx={{ mt: 1, mb: 2 }}>
+           Willkommen bei wobconnects
         </Typography>
-        
-        {error && <Alert severity="error" sx={{ mb: 3 }}>{error}</Alert>}
-        
-        <Box component="form" onSubmit={handleSubmit} noValidate>
+        {error && <Alert severity="error" sx={{ width: '100%', mb: 2 }}>{error}</Alert>}
+        <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
           <TextField
             margin="normal"
             required

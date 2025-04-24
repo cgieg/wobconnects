@@ -1,6 +1,6 @@
 import { createTheme } from '@mui/material/styles';
 
-// Definiere ein einfaches Theme für Wolfsburg Connect
+// Definiere ein einfaches Theme für wobconnects
 const theme = createTheme({
   palette: {
     primary: {

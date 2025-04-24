@@ -38,9 +38,29 @@ export const AuthProvider = ({ children }) => {
         await new Promise(resolve => setTimeout(resolve, 500)); // Simuliere Netzwerk Latenz
         let response;
         if (email === 'test@example.com' && password === 'password') {
-            response = { success: true, user: { id: '1', name: 'Test User', email: 'test@example.com', isVerified: true } };
+            response = { 
+                success: true, 
+                user: { 
+                    id: '1', 
+                    name: 'Test User', 
+                    email: 'test@example.com', 
+                    isVerified: true, 
+                    dateOfBirth: '1990-05-15', // Beispiel-Datum
+                    district: 'Stadtmitte' // Beispiel-Ortsteil
+                }
+            };
         } else if (email === 'nachbar@example.com' && password === 'password123') {
-            response = { success: true, user: { id: '2', name: 'Nachbar B', email: 'nachbar@example.com', isVerified: false } };
+            response = { 
+                success: true, 
+                user: { 
+                    id: '2', 
+                    name: 'Nachbar B', 
+                    email: 'nachbar@example.com', 
+                    isVerified: false,
+                    dateOfBirth: '1985-11-22', // Beispiel-Datum
+                    district: 'Nordstadt' // Beispiel-Ortsteil
+                }
+            };
         } else {
             response = { success: false, message: 'Ungültige Anmeldedaten' };
         }

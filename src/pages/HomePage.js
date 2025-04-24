@@ -34,10 +34,10 @@ function HomePage() {
         <Container maxWidth="lg">
           <Grid container spacing={4} alignItems="center">
             <Grid item xs={12} md={6}>
-              <Typography variant="h2" component="h1" gutterBottom sx={{ fontWeight: 700 }}>
-                Wolfsburg Connect
+              <Typography variant="h2" component="h1" sx={{ fontWeight: 'bold', mb: 2 }}>
+                wobconnects
               </Typography>
-              <Typography variant="h5" sx={{ mb: 4 }}>
+              <Typography variant="h5" component="p" color="text.secondary" sx={{ mb: 4 }}>
                 Deine lokale Plattform für Nachbarschaftshilfe und Gemeinschaft
               </Typography>
               <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2}>
@@ -89,7 +89,7 @@ function HomePage() {
       {/* Features Section */}
       <Container maxWidth="lg" sx={{ mb: 8 }}>
         <Typography variant="h4" component="h2" textAlign="center" gutterBottom>
-          Was bietet Wolfsburg Connect?
+          Was bietet wobconnects?
         </Typography>
         <Typography variant="body1" color="text.secondary" textAlign="center" sx={{ mb: 6 }}>
           Unsere Plattform verbindet Bewohner und fördert nachbarschaftliche Unterstützung.

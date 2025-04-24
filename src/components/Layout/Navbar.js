@@ -56,7 +56,7 @@ const Navbar = () => {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        Wolfsburg Connect
+        wobconnects
       </Typography>
       <Divider />
       <List>
@@ -96,19 +96,20 @@ const Navbar = () => {
           {/* Logo */}
           <Typography
             variant="h6"
-            noWrap
             component={RouterLink}
             to="/"
             sx={{
               mr: 2,
               display: { xs: 'flex' },
+              flexGrow: { xs: 1, md: 0 },
               fontFamily: 'monospace',
               fontWeight: 700,
               color: 'inherit',
               textDecoration: 'none',
+              fontSize: { xs: '1.1rem', md: '1.25rem' }
             }}
           >
-            Wolfsburg Connect
+            wobconnects
           </Typography>
 
           {/* Desktop navigation */}

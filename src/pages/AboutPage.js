@@ -5,8 +5,8 @@ function AboutPage() {
   return (
     <Container maxWidth="md" sx={{ mt: 4, mb: 4 }}>
       <Paper elevation={2} sx={{ p: 4 }}>
-        <Typography variant="h3" component="h1" gutterBottom sx={{ fontWeight: 'bold', color: 'primary.main' }}>
-          Über Wolfsburg Connect
+        <Typography variant="h4" component="h1" gutterBottom align="center">
+          Über wobconnects
         </Typography>
         
         <Typography variant="h5" component="h2" gutterBottom color="text.secondary" sx={{ mb: 3 }}>
@@ -15,7 +15,7 @@ function AboutPage() {
 
         <Box sx={{ '& p': { mb: 2 } }}> {/* Fügt Abstand nach jedem Absatz hinzu */}
           <Typography variant="body1" paragraph>
-            Willkommen bei Wolfsburg Connect, der hyper-lokalen Plattform, die darauf abzielt, 
+            Willkommen bei wobconnects, der hyper-lokalen Plattform, die darauf abzielt, 
             die Bewohner von Wolfsburg näher zusammenzubringen. In unserer schnelllebigen Welt 
             ist es leicht, den Kontakt zu den Menschen in unserer unmittelbaren Umgebung zu verlieren. 
             Wir wollen das ändern!
@@ -25,7 +25,7 @@ function AboutPage() {
             Unsere Plattform wurde mit dem Ziel entwickelt, Nachbarschaftshilfe zu fördern, 
             das Teilen von Ressourcen zu vereinfachen und die lokale Gemeinschaft zu stärken. 
             Egal, ob Sie Hilfe beim Einkaufen benötigen, eine Bohrmaschine verleihen möchten 
-            oder einfach nur wissen wollen, was in Ihrer Nachbarschaft los ist – Wolfsburg Connect 
+            oder einfach nur wissen wollen, was in Ihrer Nachbarschaft los ist – wobconnects 
             ist Ihr digitaler Treffpunkt.
           </Typography>
           
