@@ -109,7 +109,8 @@ const Navbar = () => {
               fontSize: { xs: '1.1rem', md: '1.25rem' }
             }}
           >
-            wobconnects
+            {/* Test-Kommentar zum Erzwingen des Commits */}
+            wobconnects 
           </Typography>
 
           {/* Desktop navigation */}
